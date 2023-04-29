@@ -72,7 +72,7 @@ public class WhatsappService {
         List<User> users = optionalUsers.get();
 
         if(!users.contains(user)){
-            throw new Exception("You are not allowed to send message");
+            throw new Exception("User is not a participant");
         }
 
         User curr_admin = getAdmin(group);
